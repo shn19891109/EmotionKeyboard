@@ -11,7 +11,7 @@
 #import "HMTextView.h"
 #import "HMComposeToolBar.h"
 
-@interface ViewController ()<UITextViewDelegate,HMComposeToolBarDelegate>
+@interface ViewController ()<HMComposeToolBarDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 @property (nonatomic, weak) HMTextView *textView;
 @property (nonatomic, weak) HMComposeToolBar *toolbar;
 
@@ -50,7 +50,6 @@
     // 垂直方向上拥有有弹簧效果
     textView.alwaysBounceVertical = YES;
     textView.frame = CGRectMake(0, 100, self.view.width, 200);
-    textView.delegate = self;
     [self.view addSubview:textView];
     self.textView = textView;
     //2.设置提醒文字
@@ -110,6 +109,55 @@
         self.toolbar.transform = CGAffineTransformIdentity;
     }];
     
+}
+#pragma mark ----HMComposeToolbarDelegate--
+/**
+ *  监听toolbar内部按钮的点击
+ */
+- (void)composeTool:(HMComposeToolBar *)toolBar didClickedButton:(HMComposeToolBarButtonType)buttonType {
+    switch (buttonType) {
+        case HMComposeToolbarButtonTypeCamera: //照相机
+            [self openCamera];
+            break;
+        case HMComposeToolbarButtonTypePicture: // 相册
+            [self openAlbum];
+            break;
+        case HMComposeToolbarButtonTypeEmotion: //表情
+            [self openEmotion];
+            break;
+        case HMComposeToolbarButtonTypeMention:
+            break;
+        default:
+            break;
+    }
+}
+- (void)openCamera {
+    if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        return;
+    }
+    UIImagePickerController *pic = [[UIImagePickerController alloc] init];
+    pic.sourceType = UIImagePickerControllerSourceTypeCamera;
+    pic.delegate = self;
+    [self presentViewController:pic animated:YES completion:nil];
+}
+- (void)openAlbum {
+    if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) {
+        return;
+    }
+    UIImagePickerController *pc = [[UIImagePickerController alloc] init];
+    pc.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    pc.delegate = self;
+    [self presentViewController:pc animated:YES completion:nil];
+}
+- (void)openEmotion {
+    
+    if (self.textView.inputView) {// 当前显示的是自定义键盘，切换为系统自带的键盘
+        self.textView.inputView = nil;
+
+    } else { // 当前显示的是系统自带的键盘，切换为自定义键盘
+        // 如果临时更换了文本框的键盘，一定要重新打开键盘
+
+    }
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

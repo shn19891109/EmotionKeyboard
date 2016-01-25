@@ -12,6 +12,16 @@
 		1EBB193E1C55C143009529A2 /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBB193C1C55C143009529A2 /* NSString+Emoji.m */; };
 		1EE0B5151C5604C400E134BF /* HMTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE0B5141C5604C400E134BF /* HMTextView.m */; };
 		1EE0B5181C5609F600E134BF /* HMComposeToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE0B5171C5609F600E134BF /* HMComposeToolBar.m */; };
+		1EE0B51C1C5619A100E134BF /* HMEmotionKeyBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE0B51B1C5619A100E134BF /* HMEmotionKeyBoard.m */; };
+		1EE0B5311C561A1600E134BF /* MJArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE0B51F1C561A1600E134BF /* MJArgument.m */; };
+		1EE0B5321C561A1600E134BF /* MJIvar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE0B5221C561A1600E134BF /* MJIvar.m */; };
+		1EE0B5331C561A1600E134BF /* MJMember.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE0B5241C561A1600E134BF /* MJMember.m */; };
+		1EE0B5341C561A1600E134BF /* MJMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE0B5261C561A1600E134BF /* MJMethod.m */; };
+		1EE0B5351C561A1600E134BF /* MJType.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE0B5281C561A1600E134BF /* MJType.m */; };
+		1EE0B5361C561A1600E134BF /* MJTypeEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE0B52A1C561A1600E134BF /* MJTypeEncoding.m */; };
+		1EE0B5371C561A1600E134BF /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE0B52C1C561A1600E134BF /* NSObject+MJCoding.m */; };
+		1EE0B5381C561A1600E134BF /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE0B52E1C561A1600E134BF /* NSObject+MJKeyValue.m */; };
+		1EE0B5391C561A1600E134BF /* NSObject+MJMember.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE0B5301C561A1600E134BF /* NSObject+MJMember.m */; };
 		1EF313FF1C54BADB005E11A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF313FE1C54BADB005E11A0 /* main.m */; };
 		1EF314021C54BADB005E11A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF314011C54BADB005E11A0 /* AppDelegate.m */; };
 		1EF314051C54BADB005E11A0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF314041C54BADB005E11A0 /* ViewController.m */; };
@@ -30,6 +40,27 @@
 		1EE0B5141C5604C400E134BF /* HMTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMTextView.m; sourceTree = "<group>"; };
 		1EE0B5161C5609F600E134BF /* HMComposeToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMComposeToolBar.h; sourceTree = "<group>"; };
 		1EE0B5171C5609F600E134BF /* HMComposeToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMComposeToolBar.m; sourceTree = "<group>"; };
+		1EE0B51A1C5619A100E134BF /* HMEmotionKeyBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMEmotionKeyBoard.h; sourceTree = "<group>"; };
+		1EE0B51B1C5619A100E134BF /* HMEmotionKeyBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMEmotionKeyBoard.m; sourceTree = "<group>"; };
+		1EE0B51E1C561A1600E134BF /* MJArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJArgument.h; sourceTree = "<group>"; };
+		1EE0B51F1C561A1600E134BF /* MJArgument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJArgument.m; sourceTree = "<group>"; };
+		1EE0B5201C561A1600E134BF /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
+		1EE0B5211C561A1600E134BF /* MJIvar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJIvar.h; sourceTree = "<group>"; };
+		1EE0B5221C561A1600E134BF /* MJIvar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJIvar.m; sourceTree = "<group>"; };
+		1EE0B5231C561A1600E134BF /* MJMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJMember.h; sourceTree = "<group>"; };
+		1EE0B5241C561A1600E134BF /* MJMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJMember.m; sourceTree = "<group>"; };
+		1EE0B5251C561A1600E134BF /* MJMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJMethod.h; sourceTree = "<group>"; };
+		1EE0B5261C561A1600E134BF /* MJMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJMethod.m; sourceTree = "<group>"; };
+		1EE0B5271C561A1600E134BF /* MJType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJType.h; sourceTree = "<group>"; };
+		1EE0B5281C561A1600E134BF /* MJType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJType.m; sourceTree = "<group>"; };
+		1EE0B5291C561A1600E134BF /* MJTypeEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJTypeEncoding.h; sourceTree = "<group>"; };
+		1EE0B52A1C561A1600E134BF /* MJTypeEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJTypeEncoding.m; sourceTree = "<group>"; };
+		1EE0B52B1C561A1600E134BF /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
+		1EE0B52C1C561A1600E134BF /* NSObject+MJCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJCoding.m"; sourceTree = "<group>"; };
+		1EE0B52D1C561A1600E134BF /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
+		1EE0B52E1C561A1600E134BF /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
+		1EE0B52F1C561A1600E134BF /* NSObject+MJMember.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJMember.h"; sourceTree = "<group>"; };
+		1EE0B5301C561A1600E134BF /* NSObject+MJMember.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJMember.m"; sourceTree = "<group>"; };
 		1EF313FA1C54BADB005E11A0 /* 表情键盘.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "表情键盘.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EF313FE1C54BADB005E11A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1EF314001C54BADB005E11A0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "表情键盘/AppDelegate.h"; sourceTree = "<group>"; };
@@ -56,6 +87,7 @@
 		1EBB19361C55B8C8009529A2 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				1EE0B51D1C561A1600E134BF /* MJExtension */,
 				1EBB193A1C55C143009529A2 /* Foundation+Log.m */,
 				1EBB193B1C55C143009529A2 /* NSString+Emoji.h */,
 				1EBB193C1C55C143009529A2 /* NSString+Emoji.m */,
@@ -73,12 +105,48 @@
 		1EE0B5121C5604BB00E134BF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1EE0B5191C56197800E134BF /* keyBoardView */,
 				1EE0B5131C5604C400E134BF /* HMTextView.h */,
 				1EE0B5141C5604C400E134BF /* HMTextView.m */,
 				1EE0B5161C5609F600E134BF /* HMComposeToolBar.h */,
 				1EE0B5171C5609F600E134BF /* HMComposeToolBar.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		1EE0B5191C56197800E134BF /* keyBoardView */ = {
+			isa = PBXGroup;
+			children = (
+				1EE0B51A1C5619A100E134BF /* HMEmotionKeyBoard.h */,
+				1EE0B51B1C5619A100E134BF /* HMEmotionKeyBoard.m */,
+			);
+			path = keyBoardView;
+			sourceTree = "<group>";
+		};
+		1EE0B51D1C561A1600E134BF /* MJExtension */ = {
+			isa = PBXGroup;
+			children = (
+				1EE0B51E1C561A1600E134BF /* MJArgument.h */,
+				1EE0B51F1C561A1600E134BF /* MJArgument.m */,
+				1EE0B5201C561A1600E134BF /* MJExtension.h */,
+				1EE0B5211C561A1600E134BF /* MJIvar.h */,
+				1EE0B5221C561A1600E134BF /* MJIvar.m */,
+				1EE0B5231C561A1600E134BF /* MJMember.h */,
+				1EE0B5241C561A1600E134BF /* MJMember.m */,
+				1EE0B5251C561A1600E134BF /* MJMethod.h */,
+				1EE0B5261C561A1600E134BF /* MJMethod.m */,
+				1EE0B5271C561A1600E134BF /* MJType.h */,
+				1EE0B5281C561A1600E134BF /* MJType.m */,
+				1EE0B5291C561A1600E134BF /* MJTypeEncoding.h */,
+				1EE0B52A1C561A1600E134BF /* MJTypeEncoding.m */,
+				1EE0B52B1C561A1600E134BF /* NSObject+MJCoding.h */,
+				1EE0B52C1C561A1600E134BF /* NSObject+MJCoding.m */,
+				1EE0B52D1C561A1600E134BF /* NSObject+MJKeyValue.h */,
+				1EE0B52E1C561A1600E134BF /* NSObject+MJKeyValue.m */,
+				1EE0B52F1C561A1600E134BF /* NSObject+MJMember.h */,
+				1EE0B5301C561A1600E134BF /* NSObject+MJMember.m */,
+			);
+			path = MJExtension;
 			sourceTree = "<group>";
 		};
 		1EF313F11C54BADB005E11A0 = {
@@ -189,12 +257,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EBB193E1C55C143009529A2 /* NSString+Emoji.m in Sources */,
+				1EE0B5321C561A1600E134BF /* MJIvar.m in Sources */,
+				1EE0B5311C561A1600E134BF /* MJArgument.m in Sources */,
+				1EE0B51C1C5619A100E134BF /* HMEmotionKeyBoard.m in Sources */,
+				1EE0B5351C561A1600E134BF /* MJType.m in Sources */,
+				1EE0B5331C561A1600E134BF /* MJMember.m in Sources */,
 				1EF314051C54BADB005E11A0 /* ViewController.m in Sources */,
+				1EE0B5381C561A1600E134BF /* NSObject+MJKeyValue.m in Sources */,
 				1EE0B5151C5604C400E134BF /* HMTextView.m in Sources */,
 				1EE0B5181C5609F600E134BF /* HMComposeToolBar.m in Sources */,
 				1EBB193D1C55C143009529A2 /* Foundation+Log.m in Sources */,
+				1EE0B5361C561A1600E134BF /* MJTypeEncoding.m in Sources */,
 				1EF314021C54BADB005E11A0 /* AppDelegate.m in Sources */,
+				1EE0B5371C561A1600E134BF /* NSObject+MJCoding.m in Sources */,
 				1EBB19391C55B8FA009529A2 /* UIView+Extension.m in Sources */,
+				1EE0B5341C561A1600E134BF /* MJMethod.m in Sources */,
+				1EE0B5391C561A1600E134BF /* NSObject+MJMember.m in Sources */,
 				1EF313FF1C54BADB005E11A0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
