@@ -31,7 +31,6 @@
         // 设置默认的字体
         self.font = [UIFont systemFontOfSize:14];
         
-#warning 不要设置自己的代理为自己本身
         // 监听内部文字改变
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textDidChange) name:UITextViewTextDidChangeNotification object:self];
     }
@@ -43,11 +42,6 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
-#pragma mark - 监听文字改变
-- (void)textDidChange
-{
-    self.placehoderLabel.hidden = (self.text.length != 0);
-}
 
 #pragma mark - 公共方法
 - (void)setText:(NSString *)text
@@ -55,6 +49,11 @@
     [super setText:text];
     
     [self textDidChange];
+}
+#pragma mark - 监听文字改变
+- (void)textDidChange
+{
+    self.placehoderLabel.hidden = (self.text.length != 0);
 }
 
 - (void)setPlacehoder:(NSString *)placehoder
