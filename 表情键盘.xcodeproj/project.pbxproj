@@ -10,6 +10,7 @@
 		1EBB19391C55B8FA009529A2 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBB19381C55B8FA009529A2 /* UIView+Extension.m */; };
 		1EBB193D1C55C143009529A2 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBB193A1C55C143009529A2 /* Foundation+Log.m */; };
 		1EBB193E1C55C143009529A2 /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBB193C1C55C143009529A2 /* NSString+Emoji.m */; };
+		1EE0B5151C5604C400E134BF /* HMTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE0B5141C5604C400E134BF /* HMTextView.m */; };
 		1EF313FF1C54BADB005E11A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF313FE1C54BADB005E11A0 /* main.m */; };
 		1EF314021C54BADB005E11A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF314011C54BADB005E11A0 /* AppDelegate.m */; };
 		1EF314051C54BADB005E11A0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF314041C54BADB005E11A0 /* ViewController.m */; };
@@ -24,6 +25,8 @@
 		1EBB193A1C55C143009529A2 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 		1EBB193B1C55C143009529A2 /* NSString+Emoji.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Emoji.h"; sourceTree = "<group>"; };
 		1EBB193C1C55C143009529A2 /* NSString+Emoji.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Emoji.m"; sourceTree = "<group>"; };
+		1EE0B5131C5604C400E134BF /* HMTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMTextView.h; sourceTree = "<group>"; };
+		1EE0B5141C5604C400E134BF /* HMTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMTextView.m; sourceTree = "<group>"; };
 		1EF313FA1C54BADB005E11A0 /* 表情键盘.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "表情键盘.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EF313FE1C54BADB005E11A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1EF314001C54BADB005E11A0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "表情键盘/AppDelegate.h"; sourceTree = "<group>"; };
@@ -64,6 +67,15 @@
 			name = Main;
 			sourceTree = "<group>";
 		};
+		1EE0B5121C5604BB00E134BF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1EE0B5131C5604C400E134BF /* HMTextView.h */,
+				1EE0B5141C5604C400E134BF /* HMTextView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		1EF313F11C54BADB005E11A0 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +95,7 @@
 		1EF313FC1C54BADB005E11A0 /* 表情键盘 */ = {
 			isa = PBXGroup;
 			children = (
+				1EE0B5121C5604BB00E134BF /* View */,
 				1EF314061C54BADB005E11A0 /* Main.storyboard */,
 				1EF314091C54BADB005E11A0 /* Assets.xcassets */,
 				1EF3140B1C54BADB005E11A0 /* LaunchScreen.storyboard */,
@@ -172,6 +185,7 @@
 			files = (
 				1EBB193E1C55C143009529A2 /* NSString+Emoji.m in Sources */,
 				1EF314051C54BADB005E11A0 /* ViewController.m in Sources */,
+				1EE0B5151C5604C400E134BF /* HMTextView.m in Sources */,
 				1EBB193D1C55C143009529A2 /* Foundation+Log.m in Sources */,
 				1EF314021C54BADB005E11A0 /* AppDelegate.m in Sources */,
 				1EBB19391C55B8FA009529A2 /* UIView+Extension.m in Sources */,
