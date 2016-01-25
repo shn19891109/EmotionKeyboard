@@ -1,29 +1,8 @@
 
 #import <Foundation/Foundation.h>
 
-@implementation UIView(Log)
-+ (NSString *)searchAllSubviews:(UIView *)superview
-{
-    NSMutableString *xml = [NSMutableString string];
-    
-    NSString *class = NSStringFromClass(superview.class);
-    class = [class stringByReplacingOccurrencesOfString:@"_" withString:@""];
-    [xml appendFormat:@"<%@ frame=\"%@\">\n", class, NSStringFromCGRect(superview.frame)];
-    for (UIView *childView in superview.subviews) {
-        NSString *subviewXml = [self searchAllSubviews:childView];
-        [xml appendString:subviewXml];
-    }
-    [xml appendFormat:@"</%@>\n", class];
-    return xml;
-}
-
-- (NSString *)description
-{
-    return [UIView searchAllSubviews:self];
-}
-@end
-
 @implementation NSDictionary (Log)
+
 - (NSString *)descriptionWithLocale:(id)locale
 {
     NSMutableString *str = [NSMutableString string];
